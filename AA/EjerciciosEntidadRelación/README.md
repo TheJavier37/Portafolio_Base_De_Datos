@@ -42,8 +42,9 @@ Los clientes realizan pedidos que contienen varios platos con distinta cantidad.
 ### Ejemplo 3: Clínica Médica
 Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en fecha, hora y consultorio. De algunas citas se genera una receta que incluye medicamentos con dosis y duración. Cada médico pertenece a una especialidad.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejemplo 3](ruta/a/tu/imagen-ejemplo3.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> <img width="1242" height="442" alt="image" src="https://github.com/user-attachments/assets/bd540cff-79e4-45fd-82ff-502faf1f0006" />
+
 
 ---
 
