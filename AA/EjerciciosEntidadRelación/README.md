@@ -33,8 +33,9 @@ Una biblioteca registra libros y autores. Un libro puede tener varios autores y 
 ### Ejemplo 2: Pedidos de Restaurante
 Los clientes realizan pedidos que contienen varios platos con distinta cantidad. Los platos se agrupan en categorías. Cada pedido lo atiende un único mesero. El precio del plato debe registrarse tal como estaba al momento del pedido, aunque luego cambie.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejemplo 2](ruta/a/tu/imagen-ejemplo2.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> `<img width="741" height="482" alt="image" src="https://github.com/user-attachments/assets/00e0bcbf-cc54-418a-b194-7de896bba7fc" />
+
 
 ---
 
