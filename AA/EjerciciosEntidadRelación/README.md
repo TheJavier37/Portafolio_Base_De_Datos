@@ -24,8 +24,9 @@ Agregar la evidencia correspondiente para cada uno de los siguientes ejercicios.
 ### Ejemplo 1: Sistema de Biblioteca
 Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejemplo 1](ruta/a/tu/imagen-ejemplo1.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> `<img width="631" height="482" alt="image" src="https://github.com/user-attachments/assets/6038c6af-f37d-4bae-8110-d05974854069" />
+
 
 ---
 
