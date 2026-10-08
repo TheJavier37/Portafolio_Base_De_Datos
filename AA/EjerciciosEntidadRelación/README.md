@@ -51,8 +51,9 @@ Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en 
 ### Ejemplo 4: Sistema de Aerolínea
 Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cada vuelo lo realiza un avión. Los pasajeros realizan reservas para un vuelo específico, indicando asiento y tarifa pagada en el momento de la reserva.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejemplo 4](ruta/a/tu/imagen-ejemplo4.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> <img width="1032" height="442" alt="image" src="https://github.com/user-attachments/assets/661879c0-d8a5-456c-b3ac-dba67ebc33c5" />
+
 
 ---
 
