@@ -66,8 +66,9 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 * **Artista:** Un artista es representado por un manager. De los artistas se almacena su nombre completo (usando un único atributo) y su NIF.
 * **Evento de Promoción:** Los artistas participan en eventos de promoción para dar a conocer sus trabajos. En un evento de promoción pueden participar varios artistas. De un evento se almacena un identificador único, la fecha de celebración y el número de asistentes.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejercicio 5](ruta/a/tu/imagen-ejercicio5.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> `<img width="832" height="202" alt="image" src="https://github.com/user-attachments/assets/de2072c4-d186-4ffa-9510-bff33e0ef92a" />
+
 
 ---
 
