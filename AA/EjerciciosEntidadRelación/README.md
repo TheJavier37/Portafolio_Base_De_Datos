@@ -123,5 +123,6 @@ Se desea informatizar la gestión de una empresa de transporte que reparte paque
   * Al pasar consulta se realiza un diagnóstico.
 * **Contacto de Emergencia:** Cada propietario tiene un familiar de contacto para casos de emergencia (cédula, nombre y teléfono). Si el propietario se da de alta en la clínica veterinaria, el familiar ya no interesa. El familiar es contacto de un solo propietario.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejercicio 9](ruta/a/tu/imagen-ejercicio9.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> <img width="1362" height="843" alt="image" src="https://github.com/user-attachments/assets/7cb22936-07e6-4163-83c4-6f1ed8c71ef9" />
+
