@@ -105,8 +105,9 @@ Se desea informatizar la gestión de una empresa de transporte que reparte paque
 * **Provincias:** De las provincias a las que llegan los paquetes interesa guardar el código de provincia y el nombre. Un paquete sólo puede llegar a una provincia. Sin embargo, a una provincia pueden llegar varios paquetes.
 * **Camiones:** De los camiones que llevan los camioneros, interesa conocer la matrícula, modelo, tipo y potencia. Un camionero puede conducir diferentes camiones en fechas diferentes, y un camión puede ser conducido por varios camioneros.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejercicio 8](ruta/a/tu/imagen-ejercicio8.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> <img width="1587" height="602" alt="image" src="https://github.com/user-attachments/assets/2faa099c-b6f6-439f-addc-6ed08a52ec03" />
+
 
 ---
 
