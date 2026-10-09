@@ -80,8 +80,9 @@ Se desea crear una aplicación para la gestión de una tienda informática:
 * **Compras:** Cada vez que se compre un artículo quedará registrada la compra en la base de datos junto con la fecha en la que se compró el artículo.
 * **Proveedores:** La tienda tiene contactos con varios proveedores que son los que suministran los productos. Un mismo producto puede ser suministrado por varios proveedores. De cada proveedor se desea guardar el código, nombres, apellidos, dirección, provincia y número de teléfono.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejercicio 6](ruta/a/tu/imagen-ejercicio6.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> <img width="1062" height="602" alt="image" src="https://github.com/user-attachments/assets/f5490448-0a74-4a03-9938-719c8bfb95f3" />
+
 
 ---
 
