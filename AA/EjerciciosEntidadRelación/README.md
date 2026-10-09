@@ -93,8 +93,9 @@ Se desea crear una aplicación para la gestión de una tienda informática:
 * De un cantante se registra el nombre y su país. Todo disco pertenece a un cantante y un cantante puede tener muchos discos.
 * Además, un disco tiene un conjunto de canciones (identificador y título). Un disco tiene muchas canciones y una canción puede estar en varios discos. Interesa conocer la posición de una canción en un determinado disco.
 
-> **Evidencia Diagrama Entidad-Relación:**
-> `![Diagrama Ejercicio 7](ruta/a/tu/imagen-ejercicio7.png)`
+> **Evidencia Diagrama Entidad-Relación:**  
+> <img width="842" height="442" alt="image" src="https://github.com/user-attachments/assets/4a463b05-980c-4168-b98d-df5c91580168" />
+
 
 ---
 
