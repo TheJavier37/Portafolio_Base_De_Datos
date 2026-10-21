@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" pages="2">
   <diagram name="Página-1" id="jM1ECJP3tH216Ah4BKjb">
     <mxGraphModel dx="975" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -113,6 +113,88 @@
         </mxCell>
         <mxCell id="B2c2gEqMQLKDkxpuewXb-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Autor: Javier Guarnizo" vertex="1">
           <mxGeometry height="30" width="210" y="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="7bDaNGHTKEIWZ26jY9By" name="Página-2">
+    <mxGraphModel dx="595" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Ejercicio 1 - Javier Guarnizo Vega" vertex="1">
+          <mxGeometry height="30" width="190" x="40" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bibliotecario(&lt;u&gt;id_bibliotecario)&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="80" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Autor(&lt;u&gt;id_autor)&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="80" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Libro(&lt;u&gt;isbn, &lt;/u&gt;bibliotecario)" vertex="1">
+          <mxGeometry height="30" width="130" x="80" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Autoria(&lt;u&gt;id,&lt;/u&gt; autor, isnb&lt;u&gt;)&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="80" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Socio(&lt;u&gt;cedula)&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="80" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Prestamo(&lt;u&gt;id,&lt;/u&gt;&amp;nbsp;fecha_retiro, fecha_entrega, isbn, socio)" vertex="1">
+          <mxGeometry height="30" width="290" x="80" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-8" edge="1" parent="1" source="oGaOpcV6vrUjKV1BCZ8d-4" style="endArrow=open;html=1;rounded=0;entryX=0.75;entryY=0.667;entryDx=0;entryDy=0;exitX=0.769;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;entryPerimeter=0;" target="oGaOpcV6vrUjKV1BCZ8d-2" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.2243" as="geometry">
+            <Array as="points">
+              <mxPoint x="179.97" y="260" />
+              <mxPoint x="192.5" y="260" />
+            </Array>
+            <mxPoint x="200" y="390" as="sourcePoint" />
+            <mxPoint x="250" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-9" edge="1" parent="1" source="oGaOpcV6vrUjKV1BCZ8d-5" style="endArrow=open;html=1;rounded=0;exitX=0.833;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.308;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;" target="oGaOpcV6vrUjKV1BCZ8d-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="330" />
+              <mxPoint x="120" y="330" />
+            </Array>
+            <mxPoint x="200" y="390" as="sourcePoint" />
+            <mxPoint x="130" y="320.09" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-10" edge="1" parent="1" source="oGaOpcV6vrUjKV1BCZ8d-5" style="endArrow=open;html=1;rounded=0;entryX=0.75;entryY=0.667;entryDx=0;entryDy=0;exitX=0.583;exitY=0.667;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;endFill=0;" target="oGaOpcV6vrUjKV1BCZ8d-3" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0073" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="360" />
+              <mxPoint x="60" y="360" />
+              <mxPoint x="60" y="290" />
+              <mxPoint x="140" y="290" />
+            </Array>
+            <mxPoint x="200" y="390" as="sourcePoint" />
+            <mxPoint x="250" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-11" edge="1" parent="1" source="oGaOpcV6vrUjKV1BCZ8d-7" style="endArrow=open;html=1;rounded=0;endFill=0;exitX=0.931;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.714;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" target="oGaOpcV6vrUjKV1BCZ8d-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="410" />
+              <mxPoint x="130" y="410" />
+            </Array>
+            <mxPoint x="200" y="390" as="sourcePoint" />
+            <mxPoint x="250" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oGaOpcV6vrUjKV1BCZ8d-12" edge="1" parent="1" source="oGaOpcV6vrUjKV1BCZ8d-7" style="endArrow=open;html=1;rounded=0;exitX=0.828;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;entryX=0.385;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" target="oGaOpcV6vrUjKV1BCZ8d-4" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.0667" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="320" />
+              <mxPoint x="220" y="320" />
+              <mxPoint x="130" y="320" />
+            </Array>
+            <mxPoint x="200" y="390" as="sourcePoint" />
+            <mxPoint x="120" y="310" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
