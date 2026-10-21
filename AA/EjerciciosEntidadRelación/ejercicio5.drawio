@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" pages="2">
   <diagram name="Página-1" id="u8gVYB9pKuRSBhcARFPs">
     <mxGraphModel dx="975" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -131,6 +131,46 @@
         </mxCell>
         <mxCell id="p-SsBVrfv1sMEwZh9VOa-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Autor: Javier Guarnizo&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="140" x="50" y="430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="IiG4BPssrwuPikloEYxh" name="Página-2">
+    <mxGraphModel dx="595" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uPytUgh_--Mh67fqIwhe-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Ejercicio 5 - Javier Guarnizo Vega" vertex="1">
+          <mxGeometry height="30" width="190" x="120" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uPytUgh_--Mh67fqIwhe-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Manager(&lt;u&gt;id_manager&lt;/u&gt;, nombre)" vertex="1">
+          <mxGeometry height="30" width="170" x="120" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uPytUgh_--Mh67fqIwhe-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Artista(&lt;u&gt;nif,&lt;/u&gt;&amp;nbsp;nombre, nombre_artistico, manager, evento)" vertex="1">
+          <mxGeometry height="30" width="300" x="120" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="uPytUgh_--Mh67fqIwhe-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Evento(&lt;u&gt;id_evento,&lt;/u&gt;&amp;nbsp;fecha, numero_asistentes)" vertex="1">
+          <mxGeometry height="30" width="250" x="120" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="uPytUgh_--Mh67fqIwhe-5" edge="1" parent="1" source="uPytUgh_--Mh67fqIwhe-3" style="endArrow=open;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=gap;endFill=0;exitX=0.75;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;" target="uPytUgh_--Mh67fqIwhe-2" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.05" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="200" />
+              <mxPoint x="205" y="200" />
+            </Array>
+            <mxPoint x="240" y="240" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RBYE1L_WGcIYWTe862Ii-2" edge="1" parent="1" source="uPytUgh_--Mh67fqIwhe-3" style="endArrow=open;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=gap;endFill=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.9;exitY=0.667;exitDx=0;exitDy=0;exitPerimeter=0;" target="uPytUgh_--Mh67fqIwhe-4" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.1119" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="260" />
+              <mxPoint x="182.5" y="260" />
+            </Array>
+            <mxPoint x="370" y="240" as="sourcePoint" />
+            <mxPoint x="420" y="190" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
