@@ -1,6 +1,7 @@
 -- ejercicio 3
 -- autor: javier guarnizo vega
-
+CREATE DATABASE IF NOT EXISTS ejercicio3_db;
+USE ejercicio3_db;
 CREATE TABLE paciente(
     cedula VARCHAR(10) PRIMARY KEY
 );

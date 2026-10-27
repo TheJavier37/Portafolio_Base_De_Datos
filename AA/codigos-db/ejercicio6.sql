@@ -1,6 +1,7 @@
 -- ejercicio 6
 -- autor: javier guarnizo vega
-
+CREATE DATABASE IF NOT EXISTS ejercicio6_db;
+USE ejercicio6_db;
 CREATE TABLE cliente(
     codigo VARCHAR(10) PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
@@ -19,9 +20,9 @@ CREATE TABLE producto(
 );
 
 CREATE TABLE cliente_producto(
-    id INT AUTO_INCREMENT PRIMARY,
-    cliente VARCHAR(10),
-    producto VARCHAR(10),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cliente VARCHAR(10) NOT NULL,
+    producto VARCHAR(10) NOT NULL,
     FOREIGN KEY (cliente) REFERENCES cliente (codigo),
     FOREIGN KEY (producto) REFERENCES producto (codigo)
 );
@@ -36,7 +37,7 @@ CREATE TABLE proveedor(
 );
 
 CREATE TABLE producto_proveedor(
-    id INT AUTO_INCREMENT PRIMARY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     producto VARCHAR(10),
     proveedor VARCHAR(10),
     FOREIGN KEY (producto) REFERENCES producto (codigo),

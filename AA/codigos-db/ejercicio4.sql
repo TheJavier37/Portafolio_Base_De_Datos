@@ -1,6 +1,7 @@
 -- ejercicio 4
 -- autor: javier guarnizo vega
-
+CREATE DATABASE IF NOT EXISTS ejercicio4_db;
+USE ejercicio4_db;
 CREATE TABLE avion(
     id_avion VARCHAR(10) PRIMARY KEY
 );
@@ -10,7 +11,7 @@ CREATE TABLE vuelo(
     hora TIME NOT NULL,
     fecha DATE NOT NULL,
     avion VARCHAR(10) UNIQUE NOT NULL,
-    FOREIGN KEY (avion) REFERENCES avion (id_avion),
+    FOREIGN KEY (avion) REFERENCES avion (id_avion)
 );
 
 CREATE TABLE reserva(

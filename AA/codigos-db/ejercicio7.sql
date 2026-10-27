@@ -1,6 +1,7 @@
 -- ejercicio 7
 -- autor: javier guarnizo vega
-
+CREATE DATABASE IF NOT EXISTS ejercicio7_db;
+USE ejercicio7_db;
 CREATE TABLE disco(
     titulo VARCHAR(50) PRIMARY KEY,
     precio DECIMAL(10,2) NOT NULL,
@@ -27,7 +28,7 @@ CREATE TABLE cancion(
 
 CREATE TABLE disco_cancion(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    posicion INT AUTO_INCREMENT NOT NULL,
+    posicion INT NOT NULL,
     disco VARCHAR(50) NOT NULL,
     cancion VARCHAR(10) NOT NULL,
     FOREIGN KEY (disco) REFERENCES disco (titulo),

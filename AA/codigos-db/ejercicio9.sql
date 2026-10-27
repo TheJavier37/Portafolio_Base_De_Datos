@@ -1,15 +1,16 @@
 -- ejercicio 9
 -- autor: javier guarnizo vega
-
+CREATE DATABASE IF NOT EXISTS ejercicio9_db;
+USE ejercicio9_db;
 CREATE TABLE propietario(
     cedula VARCHAR(10) PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
-    direccion VARCHAR(100) NOT NULL,
+    direccion VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE telefono(
-    ceedula VARCHAR(10) NOT NULL,
+    cedula VARCHAR(10) NOT NULL,
     numero_telefono VARCHAR(13) NOT NULL,
     FOREIGN KEY (cedula) REFERENCES propietario (cedula),
     PRIMARY KEY (cedula, numero_telefono)
@@ -53,9 +54,8 @@ CREATE TABLE personal(
 CREATE TABLE veterinario(
     codigo VARCHAR(12) PRIMARY KEY,
     especialidad VARCHAR(45) NOT NULL,
-    fecha_alta DATE NOT NULL
-    FOREING KEY (codigo) REFERENCES personal (codigo),
-
+    fecha_alta DATE NOT NULL,
+    FOREIGN KEY (codigo) REFERENCES personal (codigo)
 );
 
 CREATE TABLE auxiliar(

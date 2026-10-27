@@ -1,9 +1,10 @@
 -- ejercicio 5
 -- autor: javier guarnizo vega
-
+CREATE DATABASE IF NOT EXISTS ejercicio5_db;
+USE ejercicio5_db;
 CREATE TABLE manager(
     id_manager VARCHAR(10) PRIMARY KEY,
-    nombre VARCHAR(50) NOT NULL,
+    nombre VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE artista(

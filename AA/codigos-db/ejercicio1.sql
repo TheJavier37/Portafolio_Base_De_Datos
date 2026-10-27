@@ -1,6 +1,7 @@
 -- ejercicio 1
 -- autor: javier guarnizo vega
-
+CREATE DATABASE IF NOT EXISTS ejercicio1_db;
+USE ejercicio1_db;
 CREATE TABLE bibliotecario(
     id_bibliotecario VARCHAR(10) PRIMARY KEY
 );
@@ -19,8 +20,8 @@ CREATE TABLE autoria(
     id INT AUTO_INCREMENT PRIMARY KEY,
     autor VARCHAR(10) NOT NULL,
     isbn VARCHAR(13) NOT NULL,
-    FOREIGN KEY (autor) REFERENCES autor,
-    FOREIGN KEY (isbn) REFERENCES libro
+    FOREIGN KEY (autor) REFERENCES autor(id_autor),
+    FOREIGN KEY (isbn) REFERENCES libro(isbn)
 );
 
 CREATE TABLE socio(
