@@ -66,7 +66,7 @@ CREATE TABLE partido (
 
 CREATE TABLE disputa (
     id_disputa VARCHAR(13) PRIMARY KEY,
-    posicion_juego VARCHAR(30) NOT NULL,
+    posicion_juego ENUM('portero', 'defensa', 'mediocampista', 'delantero') NOT NULL,
     minutos_jugados INT NOT NULL CHECK (minutos_jugados BETWEEN 0 AND 130),
     titularidad BOOLEAN NOT NULL DEFAULT TRUE,
     goles_anotados INT DEFAULT 0 CHECK (goles_anotados >= 0),
@@ -80,8 +80,8 @@ CREATE TABLE disputa (
     CONSTRAINT unique_jugador_partido UNIQUE (jugador, partido)
 );
 
-CREATE TABLE tabla_posicion (
-    id_tabla VARCHAR(10) PRIMARY KEY,
+CREATE TABLE posicion (
+    id_posicion VARCHAR(10) PRIMARY KEY,
     temporada VARCHAR(10) NOT NULL,
     puntos_totales INT DEFAULT 0 CHECK (puntos_totales >= 0),
     partidos_jugados INT DEFAULT 0 CHECK (partidos_jugados >= 0),
@@ -98,11 +98,7 @@ CREATE TABLE tabla_posicion (
 
 CREATE TABLE resultado (
     id_resultado VARCHAR(10) PRIMARY KEY,
-    tipo_resultado VARCHAR(10) NOT NULL CHECK (tipo_resultado IN ('victoria', 'empate', 'derrota')),
-    puntos_otorgados INT NOT NULL CHECK (puntos_otorgados IN (0, 1, 3)),
-    tabla_posicion VARCHAR(10) NOT NULL,
+    tipo_resultado ENUM('victoria', 'empate', 'derrota') NOT NULL,
     partido VARCHAR(13) NOT NULL,
-    FOREIGN KEY (tabla_posicion) REFERENCES tabla_posicion(id_tabla),
-    FOREIGN KEY (partido) REFERENCES partido(id_partido),
-    CONSTRAINT unique_equipo_partido UNIQUE (tabla_posicion, partido)
+    FOREIGN KEY (partido) REFERENCES partido(id_partido)
 );

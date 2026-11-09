@@ -63,8 +63,11 @@ CROSS JOIN arbitro_principal a
 LEFT JOIN partido p 
     ON (p.equipo_local = c.id_club OR p.equipo_visitante = c.id_club) 
     AND p.arbitro = a.id_arbitro
+LEFT JOIN jugador j 
+    ON j.club = c.id_club
 LEFT JOIN disputa d 
-    ON p.id_partido = d.partido
+    ON p.id_partido = d.partido 
+    AND d.jugador = j.id_jugador
 GROUP BY c.id_club, c.nombre, a.id_arbitro, a.nombre, a.apellido
 HAVING total_rojas_recibidas > 0;
 
@@ -77,14 +80,12 @@ FROM jugador j
 INNER JOIN club c 
     ON j.club = c.id_club
 WHERE EXISTS (
-    -- El jugador debe haber sido titular al menos en 1 partido
     SELECT 1 
     FROM disputa d_tit 
     WHERE d_tit.jugador = j.id_jugador 
     AND d_tit.titularidad = TRUE
 )
 AND NOT EXISTS (
-    -- Comprueba que NO exista ningún partido donde fue titular pero no hizo gol
     SELECT 1 
     FROM disputa d 
     WHERE d.jugador = j.id_jugador 
